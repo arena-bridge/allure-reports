@@ -48,7 +48,7 @@ Step by step Instruction for creating an allure-reports on Github Pages function
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy test report from workflow run #${{ github.run_number }}'
 
-6. The allure reports will be accesible from the domain visible in Pages section. 
+6. The allure reports will be accessible from the domain visible in Pages section automatically, after commit to the test-branch.  
    
 
 
