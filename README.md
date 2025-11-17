@@ -1,4 +1,4 @@
-# Allure reports functionality
+# Allure reports integrated functionality
 
 Repository for storing reports
 
