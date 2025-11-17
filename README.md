@@ -20,14 +20,15 @@ Step by step Instruction for creating an allure-reports on Github Pages function
    Branch: gh-pages / root
    Save
 
-5. Add the given steps to the end of the .yml file
+5. Add the given steps to the end of the .yml file:
    
-  - name: Deploy to public GitHub Pages repository
+   
+       name: Deploy to public GitHub Pages repository
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.REPORTS_DEPLOY_TOKEN }}
-          external_repository: your-username/your-public-reports-repo  # ⬅️ Change to yours
+          external_repository: your-username/your-public-reports-repo   ⬅️ Change to yours
           publish_dir: ./allure-report
           publish_branch: gh-pages
           keep_files: false
@@ -35,7 +36,7 @@ Step by step Instruction for creating an allure-reports on Github Pages function
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy test report from workflow run #${{ github.run_number }}'
 
-6. The allure reports will be accesible from the domain visible in Pages section. 
+7. The allure reports will be accesible from the domain visible in Pages section. 
    
 
 
