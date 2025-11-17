@@ -1,4 +1,5 @@
-# allure-reports
+# Allure reports functionality
+
 Repository for storing reports
 
 https://arena-bridge.github.io/allure-reports/#
@@ -8,10 +9,16 @@ Step by step Instruction for creating an allure-reports on Github Pages function
 
 1. Create a Personal Access Token in
    GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
+
+   Select:
+   
    repo(full access)
+   
    workflow
 
-2. Add the token to the private repository from where the report and artifacts will be generated.
+3. Add the token to the private repository from where the report and artifacts will be generated.
+
+   Repository → Settings → Secrets and variables → Actions → "New repository secret"
    
 4. Create a public repository where the reports will be stored.
    
