@@ -12,9 +12,9 @@ Step by step Instruction for creating an allure-reports on Github Pages function
 
    Select:
    
-   repo(full access)
+      repo(full access)
    
-   workflow
+      workflow
 
 3. Add the token to the private repository from where the report and artifacts will be generated.
 
@@ -22,14 +22,17 @@ Step by step Instruction for creating an allure-reports on Github Pages function
    
    Call it: REPORTS_DEPLOY_TOKEN
    
-5. Create a public repository where the reports will be stored.
-   
-   Settings → Pages
-   Source: Deploy from a branch
-   Branch: gh-pages / root
-   Save
+4. In GitHubs Pages in repository setting set up accordingly:
 
-6. Add the given steps to the end of the .yml file:
+ Pages Source: 
+
+    Deploy from a branch 
+
+ Branch:
+
+    gh-pages / root
+
+5. Add the given steps to the end of the .yml file:
    
    
        name: Deploy to public GitHub Pages repository
@@ -45,7 +48,7 @@ Step by step Instruction for creating an allure-reports on Github Pages function
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy test report from workflow run #${{ github.run_number }}'
 
-7. The allure reports will be accesible from the domain visible in Pages section. 
+6. The allure reports will be accesible from the domain visible in Pages section. 
    
 
 
