@@ -19,6 +19,7 @@ Step by step Instruction for creating an allure-reports on Github Pages function
 3. Add the token to the private repository from where the report and artifacts will be generated.
 
    Repository → Settings → Secrets and variables → Actions → "New repository secret"
+   
    Call it: REPORTS_DEPLOY_TOKEN
    
 5. Create a public repository where the reports will be stored.
