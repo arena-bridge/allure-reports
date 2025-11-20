@@ -10,17 +10,20 @@ Step by step Instruction for creating an allure-reports on Github Pages function
 1. Create a Personal Access Token in GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic). This will work as an authentication for pushing the reports between the two repositories.
 
 Select:
-
-     repo(full access)
-
-     workflow
+```
+repo(full access)
+```
+```
+workflow
+```
 
 2. Add the token to the private repository from where the report and artifacts will be generated.
-
-      Repository → Settings → Secrets and variables → Actions → "New repository secret"
-
-      Call it: REPORTS_DEPLOY_TOKEN
-
+```
+Repository → Settings → Secrets and variables → Actions → "New repository secret"
+```
+```
+Name: REPORTS_DEPLOY_TOKEN
+```
 3. Create a public repository where the reports will be stored
 
 4. In GitHubs Pages in repository setting  up accordingly:
@@ -36,7 +39,7 @@ Branch:
 5. Add the given steps to the end of the .yml file:
 
 
-   
+ ```  
 name: Get Allure history from external repo
   uses: actions/checkout@v3
   if: always()
@@ -85,14 +88,14 @@ name: Deploy to public GitHub Pages repository
     user_email: 'github-actions[bot]@users.noreply.github.com'
     commit_message: 'Deploy test report from workflow run #${{ github.run_number }}'
 
-
+```
 6. This given script allows also for generating and storing history for previous 20 runs in the reports repository.
 
 7. The allure reports will be accessible from the domain visible in Pages section automatically, after commit to the test-branch. 
 
 8. There is a possibility that the URL from the Github Pages will point to the main test repository. In that case there is also a need for inserting below .yml lines, in order to fix the URL indication. 
 
-
+```
 name: Copy and fix history
       if: always()
       continue-on-error: true
@@ -116,5 +119,6 @@ name: Fix ownership and URLs
             sed -i 's|Test-Automation-example.github.io/example/|Test-Automatio-example.github.io/example-reports/|g'
           echo "=== Fixed index.html ==="
           cat allure-history/index.html
+```
 
 
