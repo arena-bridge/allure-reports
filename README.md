@@ -7,33 +7,33 @@ https://arena-bridge.github.io/allure-reports/#
 
 Step by step Instruction for creating an allure-reports on Github Pages functionality, for storing automatically reports from test runs.
 
-Create a Personal Access Token in GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic). This will work as an authentication for pushing the reports between the two repositories.
+1. Create a Personal Access Token in GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic). This will work as an authentication for pushing the reports between the two repositories.
 
 Select:
 
-  repo(full access)
+   repo(full access)
 
-  workflow
+   workflow
 
-Add the token to the private repository from where the report and artifacts will be generated.
+2. Add the token to the private repository from where the report and artifacts will be generated.
 
 Repository → Settings → Secrets and variables → Actions → "New repository secret"
 
 Call it: REPORTS_DEPLOY_TOKEN
 
-Create a public repository where the reports will be stored
+3. Create a public repository where the reports will be stored
 
-In GitHubs Pages in repository setting  up accordingly:
+4. In GitHubs Pages in repository setting  up accordingly:
 
  Pages Source: 
 
-Deploy from a branch 
+    Deploy from a branch 
 
 Branch:
 
- gh-pages / root
+     gh-pages / root
 
-Add the given steps to the end of the .yml file:
+5. Add the given steps to the end of the .yml file:
    
    - name: Get Allure history from external repo
   uses: actions/checkout@v3
@@ -78,11 +78,11 @@ Add the given steps to the end of the .yml file:
     commit_message: 'Deploy test report from workflow run #${{ github.run_number }}'
 
 
-This given script allows also for generating and storing history for previous 20 runs in the reports repository.
+6. This given script allows also for generating and storing history for previous 20 runs in the reports repository.
 
-The allure reports will be accessible from the domain visible in Pages section automatically, after commit to the test-branch. 
+7. The allure reports will be accessible from the domain visible in Pages section automatically, after commit to the test-branch. 
 
-There is a possibility that the URL from the Github Pages will point to the main test repository. In that case there is also a need for inserting below .yml lines, in order to fix the URL indication. 
+8. There is a possibility that the URL from the Github Pages will point to the main test repository. In that case there is also a need for inserting below .yml lines, in order to fix the URL indication. 
 
 - name: Copy and fix history
       if: always()
