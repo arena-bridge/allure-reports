@@ -17,9 +17,9 @@ Select:
 
 2. Add the token to the private repository from where the report and artifacts will be generated.
 
-Repository → Settings → Secrets and variables → Actions → "New repository secret"
+      Repository → Settings → Secrets and variables → Actions → "New repository secret"
 
-Call it: REPORTS_DEPLOY_TOKEN
+      Call it: REPORTS_DEPLOY_TOKEN
 
 3. Create a public repository where the reports will be stored
 
