@@ -11,9 +11,9 @@ Step by step Instruction for creating an allure-reports on Github Pages function
 
 Select:
 
-   repo(full access)
+     repo(full access)
 
-   workflow
+     workflow
 
 2. Add the token to the private repository from where the report and artifacts will be generated.
 
