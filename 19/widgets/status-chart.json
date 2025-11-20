@@ -1,0 +1,1 @@
+[{"uid":"f4afbe5bbcd3e0d3","name":"User Can Select Einfamilienhaus","time":{"start":1763647800275,"stop":1763647805824,"duration":5549},"status":"passed","severity":"normal"},{"uid":"369ecf7b405d29e3","name":"User Can Tariff Rechnen","time":{"start":1763647800294,"stop":1763647813142,"duration":12848},"status":"failed","severity":"normal"}]
