@@ -34,8 +34,10 @@ Branch:
      gh-pages / root
 
 5. Add the given steps to the end of the .yml file:
+
+
    
-   - name: Get Allure history from external repo
+- name: Get Allure history from external repo
   uses: actions/checkout@v3
   if: always()
   continue-on-error: true
@@ -44,6 +46,8 @@ Branch:
     ref: gh-pages
     path: gh-pages
     token: ${{ secrets.REPORTS_DEPLOY_TOKEN }}
+
+  
 
 - name: Copy history to allure-results
   if: always()
@@ -55,6 +59,8 @@ Branch:
     else
       echo "No history - first run"
     fi
+
+  
   
 - name: Allure Report action
   uses: simple-elf/allure-report-action@master
@@ -63,6 +69,8 @@ Branch:
     allure_results: reports/allure-results  # Location with allure generated reports
     allure_history: allure-history
     keep_reports: 20
+
+  
   
 - name: Deploy to public GitHub Pages repository
   if: always()
@@ -83,6 +91,7 @@ Branch:
 7. The allure reports will be accessible from the domain visible in Pages section automatically, after commit to the test-branch. 
 
 8. There is a possibility that the URL from the Github Pages will point to the main test repository. In that case there is also a need for inserting below .yml lines, in order to fix the URL indication. 
+
 
 - name: Copy and fix history
       if: always()
