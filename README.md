@@ -37,7 +37,7 @@ Branch:
 
 
    
-- name: Get Allure history from external repo
+name: Get Allure history from external repo
   uses: actions/checkout@v3
   if: always()
   continue-on-error: true
@@ -49,7 +49,7 @@ Branch:
 
   
 
-- name: Copy history to allure-results
+name: Copy history to allure-results
   if: always()
   continue-on-error: true
   run: |
@@ -62,7 +62,7 @@ Branch:
 
   
   
-- name: Allure Report action
+name: Allure Report action
   uses: simple-elf/allure-report-action@master
   if: always()
   with:
@@ -72,7 +72,7 @@ Branch:
 
   
   
-- name: Deploy to public GitHub Pages repository
+name: Deploy to public GitHub Pages repository
   if: always()
   uses: peaceiris/actions-gh-pages@v3
   with:
@@ -93,7 +93,7 @@ Branch:
 8. There is a possibility that the URL from the Github Pages will point to the main test repository. In that case there is also a need for inserting below .yml lines, in order to fix the URL indication. 
 
 
-- name: Copy and fix history
+name: Copy and fix history
       if: always()
       continue-on-error: true
       run: |
@@ -105,7 +105,7 @@ Branch:
 
 
 
-  - name: Fix ownership and URLs
+name: Fix ownership and URLs
         if: always()
         run: |
           sudo chown -R runner:runner allure-history/
