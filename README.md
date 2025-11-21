@@ -26,7 +26,7 @@ Name: REPORTS_DEPLOY_TOKEN
 ```
 3. Create a public repository where the reports will be stored
 
-4. In GitHubs Pages in repository settings input accordingly:
+4. In GitHubs Pages in repository settings, where reports will be stored, input accordingly:
 
  Pages Source: 
 
