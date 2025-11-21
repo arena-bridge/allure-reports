@@ -17,7 +17,7 @@ repo(full access)
 workflow
 ```
 
-2. Add the token to the private repository from where the report and artifacts will be generated.
+2. Add the token to the test repository from where the report and artifacts will be generated.
 ```
 Repository → Settings → Secrets and variables → Actions → "New repository secret"
 ```
