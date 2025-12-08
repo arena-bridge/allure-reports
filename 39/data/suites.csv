@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verify user can select Einfamilienhaus house type","0","User Can Select Einfamilienhaus","Tests","Mon Dec 08 12:20:23 UTC 2025","failed","Mon Dec 08 12:20:23 UTC 2025","VHVHappyPathTest","VHVProject","",""
+"Verify user can ein Tarif rechnen after selecting Fahrrad","28226","User Can Tariff Rechnen","Tests","Mon Dec 08 12:20:23 UTC 2025","passed","Mon Dec 08 12:20:51 UTC 2025","LinexoHappyPathTest","LinexoProject","",""
