@@ -1,0 +1,1 @@
+{"uuid":"25bf34b3-9bc9-43c9-8dff-0a5d857f7290","name":"getInsuranceConfigurationById_shouldThrowNotFound_WhenMissing()","children":["c4fdaf85-2752-4ed7-a0c8-566a1a005b1a"],"befores":[],"afters":[],"start":1765889482241,"stop":1765889482348}

@@ -1,0 +1,1 @@
+{"uuid":"e49f4da1-29c4-4395-9649-67b94f676015","name":"whenAccessProtectedEndpointsWithoutAuth_thenUnauthorized()","children":["185f41d0-62b2-4833-a925-dc7f0cf0c41c"],"befores":[],"afters":[],"start":1765889469540,"stop":1765889469559}
