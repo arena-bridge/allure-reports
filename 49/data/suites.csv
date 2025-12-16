@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","110","User Can Calculate Tariff From CSV","Tests","Tue Dec 16 09:33:23 UTC 2025","failed","Tue Dec 16 09:33:24 UTC 2025","ArenaEdgeCasesDDT","ArenaProject","",""
