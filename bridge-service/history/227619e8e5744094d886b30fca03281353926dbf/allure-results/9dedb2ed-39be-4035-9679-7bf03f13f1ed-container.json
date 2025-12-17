@@ -1,0 +1,1 @@
+{"uuid":"9dedb2ed-39be-4035-9679-7bf03f13f1ed","name":"listFrontendEndpoints_shouldReturnEndpoints_whenHealthyWebAppWithEntrypoints()","children":["63632b45-c046-4563-8b64-28b4fb81e3d1"],"befores":[],"afters":[],"start":1765966356157,"stop":1765966356174}
