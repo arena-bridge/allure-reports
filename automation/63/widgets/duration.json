@@ -1,0 +1,1 @@
+[{"uid":"56f1b947efe145bd","name":"User Can Calculate Tariff From CSV","time":{"start":1765973526418,"stop":1765973526453,"duration":35},"status":"failed","severity":"normal"},{"uid":"56f4df9ea98fbfe1","name":"User Can Calculate Tariff From CSV","time":{"start":1765973564797,"stop":1765973576412,"duration":11615},"status":"passed","severity":"normal"}]
