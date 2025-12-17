@@ -1,0 +1,1 @@
+{"uuid":"286707d3-c57e-4ff8-92d1-ce700e62c6b6","name":"listFrontendEndpoints_shouldReturnEmptyList_whenNoApplicationsFound()","children":["ad80b188-6fc0-42e4-9cf3-234d041bc69c"],"befores":[],"afters":[],"start":1765965685265,"stop":1765965685285}
